@@ -1,0 +1,1 @@
+SELECT store_id, address, city FROM store, address, city WHERE store.address_id = address.address_id AND city.city_id = address.city_id;
