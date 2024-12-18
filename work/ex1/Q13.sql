@@ -1,0 +1,1 @@
+SELECT * FROM store, address WHERE store.address_id = address.address_id;
