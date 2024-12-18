@@ -1,0 +1,1 @@
+SELECT city, address FROM city LEFT OUTER JOIN address ON city.city_id = address.city_id ORDER BY city;
