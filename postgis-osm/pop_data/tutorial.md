@@ -68,7 +68,7 @@ chmod +x /work/data/osm/kanto-latest.osm.pbf
 osm2pgsql --create --database=gisdb --slim --style=./default.style -U postgres -H localhost ./kanto-latest.osm.pbf
 ```
 （注意）かなり時間がかかります。
-
+12/19ここまでOK
 
 ## 3. 人流データのインポート
 
@@ -146,6 +146,7 @@ sh /work/data/pop_data/copy_csv.sh
 ```sh
 psql -U postgres -d gisdb -f /work/data/pop_data/copy_csv.sql
 ```
+1/9飛ばした
 
 これですべてのでcsvデータが`pop`テーブルにインポートされる。
 
